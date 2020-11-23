@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="sect-styling.css" />
+    <title>Select the colors of the squares</title>
+  </head>
+  <body>
+    <div id="app">
+      <h2>Select the colors of the square!</h2>
+      <div class="demo" :class="color"></div>
+      <hr />
+      <input type="text " v-model="color" />
+    </div>
+
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          color: "white"
+        }
+      });
+    </script>
+  </body>
+</html>
